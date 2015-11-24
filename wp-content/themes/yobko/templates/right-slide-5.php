@@ -24,5 +24,5 @@
 			<p class="grey">Lubimy nowe wyzwania.
 				Ale to pasja do działania napędza nas do ciągłego rozwoju.</p>
 		</div>
-		<img src="<?php echo $pwd ?>img/Untitled-5.png" class="slider-image" alt="Slider 5" data-id="5" />
+		<img src="<?php echo $pwd ?>img/Untitled-51.png" class="slider-image" alt="Slider 5" data-id="5" />
 </div>

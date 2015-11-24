@@ -41,7 +41,7 @@
 <body>
 
 <header id="main-header">
-    <div class="container-fluid">
+    <div class="container-fluid header">
             <a id="logo" href="<?php echo $get_hd; ?>" class="pull-left">
                 <img src="<?php echo $pwd ?>img/logo.png" alt="logo">
                 <img src="<?php echo $pwd ?>img/logo-text.png" alt="logo text">
