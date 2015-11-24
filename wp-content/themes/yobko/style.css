@@ -469,6 +469,10 @@ p.r{
     height: auto;
     margin-left: calc( 100% - 217px);
 }
+.slide-bg-4 .slider-image {
+	/*border-radius: 180px;*/
+    /*box-shadow: inset 0 0 900px rgba(255, 255, 255, 0.48), 0 0 90px rgba(255, 255, 255, 0.45);*/
+}
 #slider-right .slick-slide.slide-bg-5 img {
     margin-left: calc( 0% - 219px);
 }
