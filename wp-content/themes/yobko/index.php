@@ -7,8 +7,8 @@
 		<div id="sliders-box">
 		
 			<div id="slider-left" class="fullscreen-slider">
-				<i class="arrow-left-1 slider-arrow-left fa fa-arrow-up slick-arrow slick-disabled" aria-disabled="true" style="display: block;"></i>
-				<i class="arrow-right-1 slider-arrow-right fa fa-arrow-down slick-arrow slick-disabled" aria-disabled="true" style="display: block;"></i>
+				<i class="arrow-left-1 slider-arrow-left slick-arrow slick-disabled" aria-disabled="true" style="display: block;"></i>
+				<i class="arrow-right-1 slider-arrow-right slick-arrow slick-disabled" aria-disabled="true" style="display: block;"></i>
 
 				<div id="carousel-left" class="single-item">
 				<?php
@@ -30,8 +30,8 @@
 			</div>
 
 			<div id="slider-right" class="fullscreen-slider">
-				<i class="arrow-left-2 slider-arrow-left fa fa-arrow-up slick-arrow slick-disabled" aria-disabled="true" style="display: block;"></i>
-				<i class="arrow-right-2 slider-arrow-right fa fa-arrow-down slick-arrow slick-disabled" aria-disabled="true" style="display: block;"></i>
+				<i class="arrow-left-2 slider-arrow-left slick-arrow slick-disabled" aria-disabled="true" style="display: block;"></i>
+				<i class="arrow-right-2 slider-arrow-right slick-arrow slick-disabled" aria-disabled="true" style="display: block;"></i>
 
 				<div id="carousel-right" class="single-item">
 				<?php

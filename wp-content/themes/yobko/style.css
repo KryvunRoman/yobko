@@ -190,12 +190,13 @@ a:focus {
 	z-index: 10;
 	width: 35px;
 	height: 35px;
-	background-color: rgba(230, 227, 221, 0.5);
 	text-align: center;
 	line-height: 32px;
 	border-radius: 90px;
 	color: #FFFFFF;
 	cursor: pointer;
+
+    background: rgba(230, 227, 221, 0.5) url('css/images/arrow.png') no-repeat center;
 }
 .slick-arrow:hover {
 	background-color: rgba(140, 140, 140, 0.5);
@@ -206,6 +207,12 @@ a:focus {
 }
 .slider-arrow-right {
 	bottom: 10vh;
+
+    -webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+
 }
 
 #sliders-box .fullscreen-slider {
