@@ -39,10 +39,10 @@
 
         // Functions
 
-        function SetSliderArgs(left, right) {
+        function SetSliderArgs(top, down) {
             return {
-                prevArrow: left,
-                nextArrow: right,
+                prevArrow: top,
+                nextArrow: down,
                 infinite: true,
                 speed: 800,
                 slidesToShow: 1,
@@ -55,19 +55,14 @@
         };
 
         function compareCurrentSlides() {
-
-            if (getCurrentSlide($sliderLeft) === getCurrentSlide($sliderRight)) {
+            if (getCurrentSlide($sliderLeft) === getCurrentSlide($sliderRight) ) {
                 showContent();
             };
         }
 
         function getSlicIndex(parent, id){
-
-            if( !parent.parentNode.querySelector('.slick-slide img[data-id="' + id + '"]') ) {
-                return false;
-            }
-
-            return $( parent.parentNode.querySelector('.slick-slide img[data-id="' + id + '"]').parentNode ).data('slickIndex');
+            var element = parent.parentNode.querySelector('.slick-slide img[data-id="' + id + '"]');
+            return !element ? false : $( element.parentNode ).data('slickIndex');
         };
 
         function getCurrentSlide(slider) {
@@ -103,9 +98,7 @@
 
         // Code
         
-        $btnMenu.on('click', function(){
-            displayMenu();
-        });
+        $btnMenu.on('click', displayMenu);
 
         $(navMenuList).on('click', function(){
             collectFullPictures( $(this).data('slide-id') );
@@ -124,17 +117,17 @@
         // Functions
 
         function displayMenu() {
-            isHasClass(popUpList, 'open') ? hideMenu() : showMenu();
+            return isHasClass(popUpList, 'open') ? hideMenu() : showMenu();
         }
 
         function hideMenu() {
             $popUpList.slideUp();
-            popUpList.classList.remove('open');
+            return popUpList.classList.remove('open');
         }
 
         function showMenu() {
             $popUpList.slideDown();
-            popUpList.classList.add('open');
+            return popUpList.classList.add('open');
         }
 
         function isHasClass(element, className) {
@@ -142,11 +135,10 @@
         }
 
         function showContent(slider) {
-            //alert('showContent');
             return $('.slick-active .title, .slick-active .content').fadeIn(400);
         }
         function hideContentSlider() {
-            $('.title, .content').hide(0);
+            return $('.title, .content').hide(0);
         }
 
     });
