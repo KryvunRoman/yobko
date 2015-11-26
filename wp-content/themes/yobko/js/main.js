@@ -143,3 +143,20 @@
 
     });
 })(window.jQuery);
+
+(function($){
+
+    var arrow = '.green-arrow';
+    
+    function showNextQuote(){
+
+        var self = $(this);
+
+        self.parent().fadeOut(400, function(){
+            $('.quote-' + self.data('to-quote') ).fadeIn(400);
+        });
+    };
+
+    $(document).on('click', arrow, showNextQuote);
+
+})(window.jQuery);

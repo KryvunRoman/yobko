@@ -105,7 +105,7 @@ a:focus {
 	height: 58px;
 }
 	#main-header .header {
-		max-width: 1596px;
+		/*max-width: 1596px*/;
 	}
 #logo {
 	height: 21px;
@@ -130,6 +130,7 @@ a:focus {
 }
 #lang-switch a {
 	color: #dbd7d2;
+	text-transform: uppercase;
 
 	-webkit-transition: .2s ease-in-out;
 	-o-transition: .2s ease-in-out;
@@ -200,6 +201,10 @@ a:focus {
 	cursor: pointer;
 
     background: rgba(230, 227, 221, 0.5) url('css/images/arrow.png') no-repeat center;
+
+    -webkit-transition: .4s ease-out;
+    -o-transition: .4s ease-out;
+    transition: .4s ease-out;
 }
 .slick-arrow:hover {
 	background-color: rgba(140, 140, 140, 0.5);
@@ -303,7 +308,7 @@ a:focus {
 	/*margin-left: 20%;*/
 	width: auto;
 	height: auto;
-	margin-top: calc( 50vh - .5em);
+	margin-top: calc( 50vh - 1em);
 	max-width: 40%;
 }
 
@@ -321,12 +326,13 @@ p.r{
 
 .slide-bg-1 .content {
 	color: #292926;
-	font-size: 32px;
+	font-size: 32pt;
 	margin-top: calc( 50vh - 3.6em);
 	width: auto;
 	font-weight: bold;
 	line-height: 1.25em;
 	padding-left: 45px;
+	padding-top: 23px;
 }
 .slide-bg-2 .content {
 	color: #013412;
@@ -335,14 +341,26 @@ p.r{
 	max-width: 440px;
 	margin-left: 235px;
 	width: auto;
-	text-indent: -9px;
+	text-indent: -14px;
 	line-height: 1.25em;
 }
+	.slide-bg-2 .quote-2 {
+		padding-top: 0.85em;
+	}
+	.green-arrow {
+		background: url('css/images/green-arrow.png') no-repeat center;
+		width: 14px;
+	    display: inline-block;
+	    height: 1em;
+	    vertical-align: bottom;
+	    cursor: pointer;
+	}
+
 .slide-bg-3 .content {
 	color: #858701;
 	font-size: 27px;
 	margin-top: calc( 50vh - 115px);
-	max-width: 300px;
+	max-width: 289px;
 	margin-left: 25	0px;
 	width: auto;
 }
@@ -369,59 +387,22 @@ p.r{
 	position: static;
 	margin: 0 auto;
 }
-.sponsor-1 span {
-	width: 92px;
-	height: 40px;
-	background-position: 0 0px;
-	background-size: initial;
+.sponsor-1 img {}
+.sponsor-2 img {}
+.sponsor-3 img {}
+.sponsor-4 img {
+    padding-top: 6px;
 }
-.sponsor-2 span {
-	width: 54px;
-	height: 40px;
-	background-position: 0 0px;
-	background-size: initial;
+.sponsor-5 img {}
+.sponsor-6 img {
+    padding-top: 6px;
 }
-.sponsor-3 span {
-	width: 54px;
-	height: 40px;
-	background-position: 0 0px;
-	background-size: initial;
+.sponsor-7 img {}
+.sponsor-8 img {
+	padding-top: 7px;
 }
-.sponsor-4 span {
-	width: 54px;
-	height: 40px;
-	background-position: 0 0px;
-	background-size: initial;
-}
-.sponsor-5 span {
-	width: 54px;
-	height: 40px;
-	background-position: 0 0px;
-	background-size: initial;
-}
-.sponsor-6 span {
-	width: 54px;
-	height: 40px;
-	background-position: 0 0px;
-	background-size: initial;
-}
-.sponsor-7 span {
-	width: 54px;
-	height: 40px;
-	background-position: 0 0px;
-	background-size: initial;
-}
-.sponsor-8 span {
-	width: 54px;
-	height: 40px;
-	background-position: 0 0px;
-	background-size: initial;
-}
-.sponsor-9 span {
-	width: 54px;
-	height: 40px;
-	background-position: 0 0px;
-	background-size: initial;
+.sponsor-9 img {
+    padding-top: 10px;
 }
 
 
@@ -441,6 +422,7 @@ p.r{
 	text-transform: uppercase;
 	margin-top: 1em;
 	line-height: 1em;
+    font-weight: bold;
 }
 .slide-bg-4 .content a {
 	display: block;
@@ -486,7 +468,11 @@ p.r{
 	display: inline-block;
 	float: left;
 	line-height: .95em;
-	padding-right: 10px;
+	margin-right: 10px;
+
+    background: linear-gradient(#b5b5b5, #7c7c7c);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 .slide-bg-5 .grey {
 	color: #6d6d6d;
@@ -503,6 +489,14 @@ p.r{
 ****************************  MEDIA  *****************************
 *****************************************************************/
 
+@media screen and (min-width: 1596px) {
+	.slider-arrow-left {
+		top: 17vh;
+	}
+	.slider-arrow-right {
+		bottom: 16vh;
+	}
+}
 
 @media screen and (max-width: 640px) {
 	#logo img:last-child {
